@@ -1,0 +1,226 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background-image: url("../../../public/img/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .user-info {
+    background: rgba(227, 242, 253, 0.26);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login-prompt {
+    background: rgba(227, 242, 253, 0.26);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #2196f3;
+  }
+
+  .btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  .btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  .btn-logout {
+    background: #dc3545;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .comment-form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+
+  .comment-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: vertical;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .comment-form textarea:focus {
+    outline: none;
+    border-color: #4facfe;
+  }
+
+  .comments-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .comment {
+    background: #f8f9fa;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #4facfe;
+    transition: transform 0.2s;
+  }
+
+  .comment:hover {
+    transform: translateX(5px);
+  }
+
+  .comment-author {
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+
+  .comment-text {
+    color: #555;
+    line-height: 1.6;
+  }
+
+  .comment-date {
+    color: #888;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .error {
+    color: #dc3545;
+    background: #f8d7da;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .success {
+    color: #155724;
+    background: #d4edda;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+
+  .no-comments {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-style: italic;
+  }
+
+  /* Додаткові стилі для пагінації */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(248, 249, 250, 0.8);
+    border-radius: 10px;
+  }
+
+  .pagination-btn {
+    background: #fff;
+    border: 2px solid #e9ecef;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+    min-width: 40px;
+  }
+
+  .pagination-btn:hover:not(:disabled) {
+    background: #4facfe;
+    color: white;
+    border-color: #4facfe;
+  }
+
+  .pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .pagination-btn.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+  }
+
+  .pagination-info {
+    color: #666;
+    font-size: 14px;
+    margin: 0 15px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .comments-per-page {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+
+  .comments-per-page select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: white;
+  }
